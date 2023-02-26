@@ -1,0 +1,197 @@
+2023-02-26 10:41:28.687  INFO 15868 --- [main] org.erkamber.ConvertME                   : Starting ConvertME using Java 11.0.17 on DESKTOP-QJ5MRT7 with PID 15868 (C:\Users\Erkan\Desktop\back-end\ConvertMe\target\classes started by Erkan in C:\Users\Erkan\Desktop\back-end\ConvertMe)
+2023-02-26 10:41:28.694  INFO 15868 --- [main] org.erkamber.ConvertME                   : No active profile set, falling back to 1 default profile: "default"
+2023-02-26 10:41:29.206  INFO 15868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-26 10:41:29.260  INFO 15868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-02-26 10:41:29.672  INFO 15868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6666 (http)
+2023-02-26 10:41:29.684  INFO 15868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-26 10:41:29.685  INFO 15868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-26 10:41:29.872  INFO 15868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-26 10:41:29.873  INFO 15868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1139 ms
+2023-02-26 10:41:30.249  INFO 15868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-26 10:41:30.407  INFO 15868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-26 10:41:30.978  INFO 15868 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 10:41:31.229  WARN 15868 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-26 10:41:31.349 DEBUG 15868 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-02-26 10:41:31.413 DEBUG 15868 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-02-26 10:41:31.432 DEBUG 15868 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-02-26 10:41:31.443 DEBUG 15868 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-02-26 10:41:31.541  INFO 15868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6666 (http) with context path ''
+2023-02-26 10:41:31.550  INFO 15868 --- [main] org.erkamber.ConvertME                   : Started ConvertME in 3.26 seconds (JVM running for 4.305)
+2023-02-26 10:41:44.006  INFO 15868 --- [http-nio-6666-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-26 10:41:44.006  INFO 15868 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-26 10:41:44.007 DEBUG 15868 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-02-26 10:41:44.007 DEBUG 15868 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-02-26 10:41:44.007 DEBUG 15868 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-02-26 10:41:44.007 DEBUG 15868 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@45451333
+2023-02-26 10:41:44.008 DEBUG 15868 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@787a0fd6
+2023-02-26 10:41:44.008 DEBUG 15868 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-02-26 10:41:44.008  INFO 15868 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-26 10:41:44.013 DEBUG 15868 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/convert?convertToCurrency=USD", parameters={masked}
+2023-02-26 10:41:44.015 DEBUG 15868 --- [http-nio-6666-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.erkamber.controllers.TextController#getText(String, String)
+2023-02-26 10:41:44.030 DEBUG 15868 --- [http-nio-6666-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to ["{<EOL><EOL>    "text": "I spent USD-25.05 on bread, EUR-10.00 on cheese, and GBP-5"<EOL><EOL>}"]
+2023-02-26 10:41:45.834 DEBUG 15868 --- [http-nio-6666-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-02-26 10:41:45.835 DEBUG 15868 --- [http-nio-6666-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{<EOL><EOL>    "text": "I spent USD-25.05 on bread, USD-9.44804 on cheese, and USD-4.185325"<EOL><EOL>}"]
+2023-02-26 10:41:45.841 DEBUG 15868 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-02-26 10:42:25.069 DEBUG 15868 --- [http-nio-6666-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/convert?convertToCurrency=BGN", parameters={masked}
+2023-02-26 10:42:25.070 DEBUG 15868 --- [http-nio-6666-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.erkamber.controllers.TextController#getText(String, String)
+2023-02-26 10:42:25.071 DEBUG 15868 --- [http-nio-6666-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to ["{<EOL><EOL>    "text": "I spent USD-25.05 on bread, EUR-10.00 on cheese, and GBP-5"<EOL><EOL>}"]
+2023-02-26 10:42:26.386 DEBUG 15868 --- [http-nio-6666-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-02-26 10:42:26.387 DEBUG 15868 --- [http-nio-6666-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{<EOL><EOL>    "text": "I spent BGN-13.553804 on bread, BGN-5.11205 on cheese, and BGN-2.264555"<EOL><EOL>}"]
+2023-02-26 10:42:26.387 DEBUG 15868 --- [http-nio-6666-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-02-26 10:54:07.205  INFO 15868 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 10:54:07.207  INFO 15868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-26 10:54:07.212  INFO 15868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-26 10:54:10.925  INFO 17880 --- [main] org.erkamber.ConvertME                   : Starting ConvertME using Java 11.0.17 on DESKTOP-QJ5MRT7 with PID 17880 (C:\Users\Erkan\Desktop\back-end\ConvertMe\target\classes started by Erkan in C:\Users\Erkan\Desktop\back-end\ConvertMe)
+2023-02-26 10:54:10.927  INFO 17880 --- [main] org.erkamber.ConvertME                   : No active profile set, falling back to 1 default profile: "default"
+2023-02-26 10:54:11.328  INFO 17880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-26 10:54:11.359  INFO 17880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2023-02-26 10:54:11.651  INFO 17880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6666 (http)
+2023-02-26 10:54:11.656  INFO 17880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-26 10:54:11.656  INFO 17880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-26 10:54:11.725  INFO 17880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-26 10:54:11.725  INFO 17880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 772 ms
+2023-02-26 10:54:11.957  INFO 17880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-26 10:54:12.047  INFO 17880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-26 10:54:12.377  INFO 17880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 10:54:12.554  WARN 17880 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-26 10:54:12.630 DEBUG 17880 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-02-26 10:54:12.672 DEBUG 17880 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-02-26 10:54:12.685 DEBUG 17880 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-02-26 10:54:12.691 DEBUG 17880 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-02-26 10:54:12.767  INFO 17880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6666 (http) with context path ''
+2023-02-26 10:54:12.774  INFO 17880 --- [main] org.erkamber.ConvertME                   : Started ConvertME in 2.123 seconds (JVM running for 2.714)
+2023-02-26 10:54:47.174  INFO 17880 --- [http-nio-6666-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-26 10:54:47.175  INFO 17880 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-26 10:54:47.175 DEBUG 17880 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-02-26 10:54:47.175 DEBUG 17880 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-02-26 10:54:47.175 DEBUG 17880 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-02-26 10:54:47.175 DEBUG 17880 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@72d16d6
+2023-02-26 10:54:47.175 DEBUG 17880 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@999cd18
+2023-02-26 10:54:47.176 DEBUG 17880 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-02-26 10:54:47.176  INFO 17880 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-26 10:54:47.181 DEBUG 17880 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/convert?convertToCurrency=TRY", parameters={masked}
+2023-02-26 10:54:47.184 DEBUG 17880 --- [http-nio-6666-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.erkamber.controllers.TextController#getText(String, String)
+2023-02-26 10:54:47.196 DEBUG 17880 --- [http-nio-6666-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to ["{<EOL><EOL>    "text": "I spent USD-25.05 on bread, EUR-10.00 on cheese, and BGN-10"<EOL><EOL>}"]
+2023-02-26 10:54:48.996 DEBUG 17880 --- [http-nio-6666-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-02-26 10:54:48.996 DEBUG 17880 --- [http-nio-6666-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{<EOL><EOL>    "text": "I spent TRY-1.327199 on bread, TRY-0.50057 on cheese, and TRY-0.9792"<EOL><EOL>}"]
+2023-02-26 10:54:49.001 DEBUG 17880 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-02-26 10:55:25.512 DEBUG 17880 --- [http-nio-6666-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/convert?convertToCurrency=BGN", parameters={masked}
+2023-02-26 10:55:25.513 DEBUG 17880 --- [http-nio-6666-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.erkamber.controllers.TextController#getText(String, String)
+2023-02-26 10:55:25.513 DEBUG 17880 --- [http-nio-6666-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to ["{<EOL><EOL>    "text": "I spent USD-25.05 on bread, EUR-10.00 on cheese, and GBP-5"<EOL><EOL>}"]
+2023-02-26 10:55:49.115 DEBUG 17880 --- [http-nio-6666-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-02-26 10:55:49.116 DEBUG 17880 --- [http-nio-6666-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{<EOL><EOL>    "text": "I spent BGN-13.553804 on bread, BGN-5.11205 on cheese, and BGN-2.264555"<EOL><EOL>}"]
+2023-02-26 10:55:49.117 DEBUG 17880 --- [http-nio-6666-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-02-26 10:56:24.970  INFO 17880 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 10:56:24.971  INFO 17880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-26 10:56:24.976  INFO 17880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-26 10:56:28.909  INFO 288 --- [main] org.erkamber.ConvertME                   : Starting ConvertME using Java 11.0.17 on DESKTOP-QJ5MRT7 with PID 288 (C:\Users\Erkan\Desktop\back-end\ConvertMe\target\classes started by Erkan in C:\Users\Erkan\Desktop\back-end\ConvertMe)
+2023-02-26 10:56:28.913  INFO 288 --- [main] org.erkamber.ConvertME                   : No active profile set, falling back to 1 default profile: "default"
+2023-02-26 10:56:29.308  INFO 288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-26 10:56:29.344  INFO 288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2023-02-26 10:56:29.634  INFO 288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6666 (http)
+2023-02-26 10:56:29.640  INFO 288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-26 10:56:29.640  INFO 288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-26 10:56:29.706  INFO 288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-26 10:56:29.706  INFO 288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 766 ms
+2023-02-26 10:56:29.932  INFO 288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-26 10:56:30.126  INFO 288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-26 10:56:30.461  INFO 288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 10:56:30.658  WARN 288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-26 10:56:30.736 DEBUG 288 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-02-26 10:56:30.778 DEBUG 288 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-02-26 10:56:30.791 DEBUG 288 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-02-26 10:56:30.798 DEBUG 288 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-02-26 10:56:30.867  INFO 288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6666 (http) with context path ''
+2023-02-26 10:56:30.874  INFO 288 --- [main] org.erkamber.ConvertME                   : Started ConvertME in 2.255 seconds (JVM running for 2.838)
+2023-02-26 10:56:36.527  INFO 288 --- [http-nio-6666-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-26 10:56:36.529  INFO 288 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-26 10:56:36.529 DEBUG 288 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-02-26 10:56:36.529 DEBUG 288 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-02-26 10:56:36.529 DEBUG 288 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-02-26 10:56:36.530 DEBUG 288 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@18f8e2e0
+2023-02-26 10:56:36.530 DEBUG 288 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@652f26da
+2023-02-26 10:56:36.531 DEBUG 288 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-02-26 10:56:36.531  INFO 288 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-02-26 10:56:36.541 DEBUG 288 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/convert?convertToCurrency=BGN", parameters={masked}
+2023-02-26 10:56:36.545 DEBUG 288 --- [http-nio-6666-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.erkamber.controllers.TextController#getText(String, String)
+2023-02-26 10:56:36.559 DEBUG 288 --- [http-nio-6666-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to ["{<EOL><EOL>    "text": "I spent USD-25.05 on bread, EUR-10.00 on cheese, and GBP-5"<EOL><EOL>}"]
+2023-02-26 10:56:38.169 DEBUG 288 --- [http-nio-6666-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-02-26 10:56:38.169 DEBUG 288 --- [http-nio-6666-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{<EOL><EOL>    "text": "I spent BGN-46.297134 on bread, BGN-19.56161 on cheese, and BGN-11.03969"<EOL><EOL>}"]
+2023-02-26 10:56:38.174 DEBUG 288 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-02-26 10:57:52.548  INFO 288 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 10:57:52.550  INFO 288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-26 10:57:52.554  INFO 288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-26 10:57:55.868  INFO 13052 --- [main] org.erkamber.ConvertME                   : Starting ConvertME using Java 11.0.17 on DESKTOP-QJ5MRT7 with PID 13052 (C:\Users\Erkan\Desktop\back-end\ConvertMe\target\classes started by Erkan in C:\Users\Erkan\Desktop\back-end\ConvertMe)
+2023-02-26 10:57:55.871  INFO 13052 --- [main] org.erkamber.ConvertME                   : No active profile set, falling back to 1 default profile: "default"
+2023-02-26 10:57:56.255  INFO 13052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-26 10:57:56.289  INFO 13052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+2023-02-26 10:57:56.587  INFO 13052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6666 (http)
+2023-02-26 10:57:56.592  INFO 13052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-26 10:57:56.593  INFO 13052 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-26 10:57:56.664  INFO 13052 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-26 10:57:56.664  INFO 13052 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 767 ms
+2023-02-26 10:57:56.900  INFO 13052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-26 10:57:56.988  INFO 13052 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-26 10:57:57.313  INFO 13052 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 10:57:57.499  WARN 13052 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-26 10:57:57.574 DEBUG 13052 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-02-26 10:57:57.614 DEBUG 13052 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-02-26 10:57:57.627 DEBUG 13052 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-02-26 10:57:57.632 DEBUG 13052 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-02-26 10:57:57.695  INFO 13052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6666 (http) with context path ''
+2023-02-26 10:57:57.702  INFO 13052 --- [main] org.erkamber.ConvertME                   : Started ConvertME in 2.114 seconds (JVM running for 2.657)
+2023-02-26 10:58:11.049  INFO 13052 --- [http-nio-6666-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-26 10:58:11.050  INFO 13052 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-26 10:58:11.050 DEBUG 13052 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-02-26 10:58:11.050 DEBUG 13052 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-02-26 10:58:11.050 DEBUG 13052 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-02-26 10:58:11.050 DEBUG 13052 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3cc6f036
+2023-02-26 10:58:11.051 DEBUG 13052 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@58068b40
+2023-02-26 10:58:11.051 DEBUG 13052 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-02-26 10:58:11.051  INFO 13052 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-26 10:58:11.056 DEBUG 13052 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/convert?convertToCurrency=TRY", parameters={masked}
+2023-02-26 10:58:11.058 DEBUG 13052 --- [http-nio-6666-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.erkamber.controllers.TextController#getText(String, String)
+2023-02-26 10:58:11.071 DEBUG 13052 --- [http-nio-6666-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to ["{<EOL><EOL>    "text": "I spent USD-25.05 on bread, EUR-10.00 on cheese, and GBP-5"<EOL><EOL>}"]
+2023-02-26 10:58:12.685 DEBUG 13052 --- [http-nio-6666-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-02-26 10:58:12.685 DEBUG 13052 --- [http-nio-6666-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{<EOL><EOL>    "text": "I spent TRY-472.80382 on bread, TRY-199.77055 on cheese, and TRY-112.74153"<EOL><EOL>}"]
+2023-02-26 10:58:12.690 DEBUG 13052 --- [http-nio-6666-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-02-26 10:58:34.915  INFO 13052 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 10:58:34.917  INFO 13052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-26 10:58:34.922  INFO 13052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-26 10:58:38.304  INFO 17412 --- [main] org.erkamber.ConvertME                   : Starting ConvertME using Java 11.0.17 on DESKTOP-QJ5MRT7 with PID 17412 (C:\Users\Erkan\Desktop\back-end\ConvertMe\target\classes started by Erkan in C:\Users\Erkan\Desktop\back-end\ConvertMe)
+2023-02-26 10:58:38.307  INFO 17412 --- [main] org.erkamber.ConvertME                   : No active profile set, falling back to 1 default profile: "default"
+2023-02-26 10:58:38.708  INFO 17412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-26 10:58:38.739  INFO 17412 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2023-02-26 10:58:39.031  INFO 17412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6666 (http)
+2023-02-26 10:58:39.036  INFO 17412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-26 10:58:39.037  INFO 17412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-26 10:58:39.108  INFO 17412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-26 10:58:39.108  INFO 17412 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 776 ms
+2023-02-26 10:58:39.341  INFO 17412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-26 10:58:39.432  INFO 17412 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-26 10:58:39.749  INFO 17412 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 10:58:39.927  WARN 17412 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-26 10:58:40.004 DEBUG 17412 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-02-26 10:58:40.049 DEBUG 17412 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-02-26 10:58:40.063 DEBUG 17412 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-02-26 10:58:40.070 DEBUG 17412 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-02-26 10:58:40.149  INFO 17412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6666 (http) with context path ''
+2023-02-26 10:58:40.156  INFO 17412 --- [main] org.erkamber.ConvertME                   : Started ConvertME in 2.127 seconds (JVM running for 2.694)
+2023-02-26 10:58:42.445  INFO 17412 --- [http-nio-6666-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-26 10:58:42.447  INFO 17412 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-26 10:58:42.448 DEBUG 17412 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-02-26 10:58:42.448 DEBUG 17412 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-02-26 10:58:42.448 DEBUG 17412 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-02-26 10:58:42.449 DEBUG 17412 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4f2d8175
+2023-02-26 10:58:42.450 DEBUG 17412 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@df432ec
+2023-02-26 10:58:42.450 DEBUG 17412 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-02-26 10:58:42.450  INFO 17412 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-02-26 10:58:42.462 DEBUG 17412 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/convert?convertToCurrency=TRY", parameters={masked}
+2023-02-26 10:58:42.465 DEBUG 17412 --- [http-nio-6666-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.erkamber.controllers.TextController#getText(String, String)
+2023-02-26 10:58:42.489 DEBUG 17412 --- [http-nio-6666-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to ["{<EOL><EOL>    "text": "I spent USD-25.05 on bread, EUR-10.00 on cheese, and GBP-5"<EOL><EOL>}"]
+2023-02-26 10:58:44.172 DEBUG 17412 --- [http-nio-6666-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-02-26 10:58:44.173 DEBUG 17412 --- [http-nio-6666-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{<EOL><EOL>    "text": "I spent TRY-472.80382 on bread, TRY-199.77055 on cheese, and TRY-112.74153"<EOL><EOL>}"]
+2023-02-26 10:58:44.178 DEBUG 17412 --- [http-nio-6666-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-02-26 10:58:48.714  INFO 17412 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-26 10:58:48.715  INFO 17412 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-26 10:58:48.720  INFO 17412 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

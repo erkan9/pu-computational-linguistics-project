@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "9be1b935-f91d-4bb7-b711-bb94ae766909",
+		"name": "ConvertME",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22748197"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6666/api/v1/convert?text=I spent USD 25.05 on bread, EUR-10.00 on cheese, and GBP-5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"api",
+						"v1",
+						"convert"
+					],
+					"query": [
+						{
+							"key": "convertToCurrency",
+							"value": "USD",
+							"disabled": true
+						},
+						{
+							"key": "text",
+							"value": "I spent USD 25.05 on bread, EUR-10.00 on cheese, and GBP-5"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\": \"I spent USD-25.05 on bread, EUR-10.00 on cheese, and GBP-5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6666/api/v1/convert?convertToCurrency=USD",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6666",
+							"path": [
+								"api",
+								"v1",
+								"convert"
+							],
+							"query": [
+								{
+									"key": "convertToCurrency",
+									"value": "USD"
+								},
+								{
+									"key": "text",
+									"value": "I spent USD 25.05 on bread, EUR-10.00 on cheese, and GBP-5",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Feb 2023 17:53:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\r\n    \"text\": \"I spent USD-15.5 on bread, USD-15.5 on cheese, and USD-15.5\"\r\n}"
+				}
+			]
+		}
+	]
+}
